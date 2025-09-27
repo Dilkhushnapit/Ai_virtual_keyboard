@@ -42,8 +42,8 @@ def drawAll(img, buttonList):
         x, y = button.pos
         w, h = button.size
 
-        cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 255), cv2.FILLED)
-        cv2.rectangle(img, (x, y), (x + w, y + h), (255, 255, 255), 3)
+        cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), cv2.FILLED)
+        cv2.rectangle(img, (x, y), (x + w, y + h), (255, 150, 0), 3)
 
         if button.text in ["SPACE", "BACKSPACE"]:
             cv2.putText(img, button.text, (x + 30, y + 55),
